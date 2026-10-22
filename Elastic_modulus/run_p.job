@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -N P700
+#PBS -W group_list=oiz
+#PBS -q standard
+#PBS -l select=1:ncpus=1:mem=6gb:pcmem=6gb
+#PBS -l place=free:shared
+#PBS -l walltime=00:10:00
+#PBS -l cput=00:10:00
+cd /home/u23/tejakondury/ONYX
+abaqus cae noGUI=pore_mod_pore_press.py
